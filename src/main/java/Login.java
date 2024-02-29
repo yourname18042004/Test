@@ -29,7 +29,7 @@ public class Login extends HttpServlet{
 		String name = req.getParameter("username");
 		String password = req.getParameter("password");
 		
-		if(name.equals("giap") && password.equals("123456")) {
+		if((name.equals("giap") && password.equals("123456")) || (name.equals("thanh") && password.equals("123456"))) {
 			Cookie cookie = new Cookie("username", name);
 			cookie.setMaxAge(30);
 			resp.addCookie(cookie);

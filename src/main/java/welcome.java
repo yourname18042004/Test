@@ -29,7 +29,7 @@ public class welcome extends HttpServlet{
 		
 		if(name.equals(""))
 		{
-			resp.sendRedirect("/Login/login");
+			resp.sendRedirect("/testLogin/login");
 		}
 		
 		writer.println("Xin chao " + name );
